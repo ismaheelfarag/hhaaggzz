@@ -302,8 +302,12 @@ body {
             </select>
             <label for="study_guide">هتحجز مذكره:</label>
             <select id="study_guide" name="study_guide" required>
-                <option value="نعم">أيوه هحجز</option>
-                <option value="لا">لا مش هحجز</option>
+                <option value="نعم"> 📚 ايوه، هحجز!
+
+✅ سعر المذكرة الورقية + المنصة التفاعلية = فقط 100 جنيه 💰</option>
+                <option value="لا">📚 ايوه، هحجز!
+
+✅ سعر المذكرة الورقية + المنصة التفاعلية = فقط 100 جنيه 💰  </option>
             </select>
             <label for="whatsapp_number">رقم واتساب:</label>
             <input type="number" id="whatsapp_number" name="whatsapp_number" placeholder="أدخل رقم واتساب" required>
@@ -360,7 +364,7 @@ body {
             };
 
             // Send email using EmailJS
-            emailjs.send("merwereee", "medddl", templateParams) // Replace with your service ID and template ID
+            emailjs.send("service_85s55fi", "template_7pn9rrl", templateParams) // Replace with your service ID and template ID
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
 
